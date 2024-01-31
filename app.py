@@ -6,6 +6,7 @@ global Lrdetect_Model
 
 # Load Malicious URL Detection model
 LrdetectFile = open('Pickle_RL_Model.pkl', 'rb')
+Lrdetect_Model = pickle.load(LrdetectFile)
 LrdetectFile.close()
 
 st.title("Malware/Benign URL Detection Tool")
